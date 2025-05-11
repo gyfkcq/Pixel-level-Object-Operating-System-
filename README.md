@@ -1,8 +1,12 @@
 # Pixel-level-Object-Operating-System-
 
 该项目来自作者本人的本科生毕业设计。
+
 这是一个基于Python的抓取项目，使用Flask作为Web框架。该项目集成了PointNet++和DGCNN模型用于点云处理。
 需要放在训练的环境下运行，确保models文件夹里包含对应的网络。
+
+项目原理如下：
+使用那个grasp_vis.py来预测，返回一个numpy数组，app.py作为前后端，从前端接收用户上传的点云文件，根据用户在前端的选项，使用grasp_vis.py来执行相应的命令，返回的结果数组，使用index.html里面的控件进行可视化展示
 
 ## 环境要求
 - Python 3.7+
